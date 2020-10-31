@@ -23,12 +23,20 @@ var texts =
     "明日地球が滅びるとしたら何がしたい？",
     "将来的に開発したい技術"
 ];
+var index = 0;
 function changeText(){
-    document.getElementById("myBtn").value="次へ"; 
+    document.getElementById("myBtn").value="次へ";
     var text = document.getElementById("myText");
-    var searchTerm =  text.innerHTML;
-    text.innerHTML = texts[0];
-    var result = texts[texts.indexOf(searchTerm) + 1];
-    text.innerHTML = result;
+    var display = document.getElementById("display");
+    if(index == texts.length)index = 0;
+    if(index % 3 == 0){
+        display.innerHTML="内定者向け";
+    }else if(index % 3 == 1){
+        display.innerHTML="新卒向け";
+    }else{
+        display.innerHTML="社員向け";
+    }
+    text.innerHTML = texts[index];
+    index++;
     return;
 }
