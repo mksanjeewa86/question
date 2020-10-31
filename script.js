@@ -28,7 +28,7 @@ function changeText(){
     var text = document.getElementById("myText");
     var searchTerm =  text.innerHTML;
     text.innerHTML = texts[0];
-    var result=texts[texts.indexOf(searchTerm)+1];
+    var result = texts[texts.indexOf(searchTerm) + 1];
     text.innerHTML = result;
     return;
 }
