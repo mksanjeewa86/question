@@ -26,15 +26,27 @@ var texts =
 var index = 0;
 function changeText(){
     document.getElementById("myBtn").value="次へ";
+    var classChange1 = document.getElementById("class1");
+    var classChange2 = document.getElementById("class2");
+    var myBtn = document.getElementById("myBtn");
     var text = document.getElementById("myText");
     var display = document.getElementById("display");
     if(index == texts.length)index = 0;
     if(index % 3 == 0){
         display.innerHTML="内定者向け";
+        classChange1.className = "card-header h-75 bg-info";
+        classChange2.className = "card-header h-75 bg-info";
+        myBtn.className = "btn btn-primary text-center wi-150 mt-1";
     }else if(index % 3 == 1){
         display.innerHTML="新卒向け";
+        classChange1.className = "card-header h-75 bg-success";
+        classChange2.className = "card-header h-75 bg-success";
+        myBtn.className = "btn btn-info text-center wi-150 mt-1";
     }else{
         display.innerHTML="社員向け";
+        classChange1.className = "card-header h-75 bg-primary";
+        classChange2.className = "card-header h-75 bg-primary";
+        myBtn.className = "btn btn-success text-center wi-150 mt-1";
     }
     text.innerHTML = texts[index];
     index++;
