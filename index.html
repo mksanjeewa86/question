@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>質問コーナー</title>
+        <title>質問コーナールール</title>
         <meta charset="utf-8">
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="script.js"></script>
@@ -9,21 +9,35 @@
     </head>
     <body>
         <header>
-            
         </header>
         <div class="container">
             <div class="card text-center">
-                <div id="class1" class="card-header h-75 bg-success">
-                    <h3 id="display" class="card-title text-center text-white">ようこそ！</h3>
+                <div id="class1" class="card-header h-75 bg-info">
+                    <h3 id="display" class="card-title text-center text-white">質問コーナールール</h3>
                 </div>
                 <div class="card-body">
-                    <h1 id="myText" class="card-title text-center">
-                        質問コーナー始まります
-                    </h1>
-                </div>
-                <div id="class2" class="card-footer h-75 text-center bg-success">
                     <p class="card-text text-center">
-                        <input id="myBtn" class="btn btn-primary text-center wi-150 mt-1" type="submit" value="開始" name="next" onclick="changeText()">
+                        質問はランダムで決まります。
+                    </p>
+                    <p class="card-text text-center">
+                        質問は内定者用、新卒用、社員用に分かれています。回答者は対応する質問に回答してください。
+                    </p>
+                    <p class="card-text text-center">
+                        一つの質問に１分から２分くらいでお話して下さい。
+                    </p>
+                    <p class="card-text text-center font-weight-bold text-danger">
+                        周りの人は追加でどんどん質問したり会話を広げるようにサポートをお願いします！！
+                    </p>
+                    <p class="card-text text-center">
+                        いやなことは答えなくていいですし、答えずらい質問はスキップして大丈夫です。
+                    </p>
+                    <p class="card-text text-center text-success">
+                        気楽に会話を楽しんで親睦を深めていきましょう!!!
+                    </p>
+                </div>
+                <div id="class2" class="card-footer h-75 text-center bg-info">
+                    <p class="card-text text-center">
+                        <input id="myBtn" class="btn btn-success text-center wi-150 mt-1" type="submit" value="開始" name="next" onclick="location.href='question.html'">
                     </p>
                 </div>
             </div>
