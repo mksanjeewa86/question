@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>質問コーナールール</title>
+        <title>質問コーナー時間選択</title>
         <meta charset="utf-8">
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-        </header>
+        <header></header>
         <div class="container">
             <div class="card text-center">
                 <div id="class1" class="card-header h-75 bg-info">
-                    <h3 id="display" class="card-title text-center text-white">質問コーナールール</h3>
+                    <h3 class="card-title text-center text-white">時間帯を選択して下さい</h3>
                 </div>
                 <div class="card-body">
-                    <p class="card-text text-center">
-                        質問はランダムで決まります。
-                    </p>
-                    <p class="card-text text-center">
-                        質問は内定者用、新卒用、社員用に分かれています。回答者は対応する質問に回答してください。
-                    </p>
-                    <p class="card-text text-center">
-                        一つの質問に１分から２分くらいでお話して下さい。
-                    </p>
-                    <p class="card-text text-center font-weight-bold text-danger">
-                        周りの人は追加でどんどん質問したり会話を広げるようにサポートをお願いします！！
-                    </p>
-                    <p class="card-text text-center">
-                        いやなことは答えなくていいですし、答えづらい質問はスキップして大丈夫です。
-                    </p>
-                    <p class="card-text text-center text-success">
-                        気楽に会話を楽しんで親睦を深めていきましょう!!!
-                    </p>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <p class="card-text text-center">
+                                    <input id="myBtn" class="btn btn-success text-center mt-1 h-90" type="submit" value="2020/11/16 18:30-19:00" name="next" onclick="location.href='rules.html?action=1'">
+                                </p>
+                            </td>
+                            <td>
+                                <p class="card-text text-center">
+                                    <input id="myBtn" class="btn btn-danger text-center mt-1 h-90" type="submit" value="2020/11/16 19:00-19:30" name="next" onclick="location.href='rules.html?action=2'">
+                                </p>
+                            </td>
+                            <td>
+                                <p class="card-text text-center">
+                                    <input id="myBtn" class="btn btn-success text-center mt-1 h-90" type="submit" value="2020/11/16 19:30-20:00" name="next" onclick="location.href='rules.html?action=3'">
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="card-text text-center">
+                                    <input id="myBtn" class="btn btn-danger text-center mt-1 h-90" type="submit" value="2020/11/19 18:30-19:00" name="next" onclick="location.href='rules.html?action=4'">
+                                </p>
+                            </td>
+                            <td>
+                                <p class="card-text text-center">
+                                    <input id="myBtn" class="btn btn-success text-center mt-1 h-90" type="submit" value="2020/11/19 19:00-19:30" name="next" onclick="location.href='rules.html?action=5'">
+                                </p>
+                            </td>
+                            <td>
+                                <p class="card-text text-center">
+                                    <input id="myBtn" class="btn btn-danger text-center mt-1 h-90" type="submit" value="2020/11/19 19:30-20:00" name="next" onclick="location.href='rules.html?action=6'">
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div id="class2" class="card-footer h-75 text-center bg-info">
+                <div class="card-footer text-center h-90 bg-info">
                     <p class="card-text text-center">
-                        <input id="myBtn" class="btn btn-success text-center wi-150 mt-1" type="submit" value="開始" name="next" onclick="location.href='question.html'">
                     </p>
                 </div>
             </div>
-            <div class="text-center"></div>
         </div>
-        <footer></footer>
     </body>
 </html>
